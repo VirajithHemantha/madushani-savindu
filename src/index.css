@@ -8,19 +8,19 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-playball: "Playball", cursive;
 
-  --color-sage: #779271;
-  --color-paper: #FDFBF7;
+  --color-sage: #9bb294;
+  --color-paper: #ffffff;
 
-  --color-theme-50: #f6f8f5;
-  --color-theme-100: #e8eee6;
-  --color-theme-200: #d1dfcd;
-  --color-theme-300: #afc9a9;
-  --color-theme-400: #8caf84;
-  --color-theme-500: #779271;
-  --color-theme-600: #577152;
-  --color-theme-700: #465a42;
-  --color-theme-800: #3a4a37;
-  --color-theme-900: #313e2f;
+  --color-theme-50: #fbfdfb;
+  --color-theme-100: #f3f7f1;
+  --color-theme-200: #e4efe1;
+  --color-theme-300: #cde3c9;
+  --color-theme-400: #b0d2ab;
+  --color-theme-500: #9cb896;
+  --color-theme-600: #7f9979;
+  --color-theme-700: #6a8264;
+  --color-theme-800: #576d52;
+  --color-theme-900: #485c44;
 }
 
 :root {
