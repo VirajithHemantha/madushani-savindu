@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, MapPin, Calendar, Clock, Volume2, VolumeX } from "lucide-react";
 
-const musicFile = "/Christina Perri - A Thousand Years  Piano Cover with Strings (with Lyrics & PIANO SHEET).mp3";
+const musicFile = "/01-Alex_Warren_-_Ordinary_(Wedding_version).mp3";
 
 /**
  * Premium Sri Lankan Wedding Invitation Theme
@@ -201,6 +201,10 @@ function CountdownTimer() {
 }
 
 export default function WeddingInvitation() {
+  const searchParams = new URLSearchParams(window.location.search);
+  const guestPrefix = searchParams.get('prefix');
+  const guestName = searchParams.get('name');
+
   const [isOpened, setIsOpened] = useState(false);
   const [isLowPerformanceMode, setIsLowPerformanceMode] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -478,7 +482,9 @@ export default function WeddingInvitation() {
                     transition={{ delay: 0.8, duration: 1 }}
                   >
                     <span className="block text-[8px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.6em] text-theme-700 font-bold mb-2">
-                      Please join us
+                      {guestName 
+                        ? `We cordially invite ${guestPrefix ? guestPrefix + ' ' : ''}${guestName}` 
+                        : "Please join us"}
                     </span>
                   </motion.div>
 
