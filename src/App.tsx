@@ -224,7 +224,7 @@ export default function WeddingInvitation() {
   const [wishSuccess, setWishSuccess] = useState(false);
 
   // Replace this with your Google Apps Script Web App URL
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbwfFXJw5oY5TJ1DOOOD0b38sMZqyMBPAWu9_KWqezEnLDkLQVuHLsnbWf6GteZXnIIT/exec";
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbz3fYYSZNf20Quz0sPDybuLn7y1ewj2UU6AEJWXcG3mzE8rUUYCrKeCH9QN0VwxfoSg/exec";
 
   const handleRsvpSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
